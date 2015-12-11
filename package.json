@@ -1,0 +1,18 @@
+{
+    "name": "angular-examples",
+    "version": "1.0.0",
+    "description": "Basic Angular Examples",
+    "authors": [
+        "Arun Banswal"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/arunbaiswal/angular-examples",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arunbaiswal/angular-examples.git"
+    },
+    "dependencies": {
+        "angular": "^1.4.8",
+        "bootstrap": "^3.3.6"
+    }
+}
