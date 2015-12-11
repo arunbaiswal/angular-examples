@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="example3">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example-003-Multi-Controllers</title>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="controller/example3-controller.js"></script>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../lib/common/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p><code>Controller within controller</code></p>
+
+<div ng-controller="MyFirstController as first">
+    <div ng-controller="MySecondController as second">
+        <h1>{{first.data.message}} {{second.data.message}}</h1>
+    </div>
+</div>
+
+<p><code>Controller and controller</code></p>
+<div ng-controller="MyFirstController as first">
+     <h1>{{first.data.message}}</h1>
+</div>
+<div ng-controller="MySecondController as second">
+    <h1>{{second.data.message}}</h1>
+</div>
+
+
+</body>
+</html>
+
