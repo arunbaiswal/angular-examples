@@ -4,7 +4,7 @@
 angular.module('example4', [])
     .service('MyService',function MyService(){
         var that = this;
-        that['message'] = 'Arun';
+        that['message'] = 'Hello';
     })
     .controller('MyFirstController', function MyFirstController(MyService) {
         var first = this;
