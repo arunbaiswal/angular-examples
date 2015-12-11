@@ -5,18 +5,17 @@ var app = angular.module('example5', []);
 
 // Directive name should be lower case
 
+app.directive('restricta', function () {
+    return {
+        restrict : 'A', // default restrict
+        template: "<div style=\"color:green\">2. Restrict to Attribute</div>"
+    }
+});
+
 app.directive('restricte', function () {
     return {
         restrict : 'E',
         template: "<div style=\"color:red\">1. Restrict to Element</div>"
-    }
-});
-
-
-app.directive('restricta', function () {
-    return {
-        restrict : 'A',
-        template: "<div style=\"color:green\">2. Restrict to Attribute</div>"
     }
 });
 
